@@ -1,22 +1,18 @@
-require('dotenv').config();
+require("dotenv").config();
 const content = require("./emailhelper");
 const messagehelper = {
-    from: {
-        name: 'Joan',
-        address: 'mainawanini@gmail.com'
-    },
-    to: process.env.GMAIL_USER,
-    subject: "calendar invite",
-     html: `<div>
-                <h4 style="text-align: center">Friends and colleagues get together</h4>
-                <p style="text-align: center; color: grey">Come lets have fun</p>
-                <p style="text-align: center; color:grey;">Bring along your friends</p>
-                <p style="text-align: center;color:grey">Meet new people and make new friends</p>
-                
-       </div>`,
-     icalEvent: {
-        content: content
-      },
-}
+  from: "mainawanini@gmail.com",
+  to: ["mainajoan12@gmail.com", "mainawanini@gmail.com"],
+  subject: "calendar invite",
+  html: `<div>
+               <h1>Invite to you:</h1>
+               <p>welcome to an awesome meet-up</p>
+               <p>Tell a friend to tell a friend</p>
+               <button style="background-color:red">Confirm attendance</button>
+        </div>  `,
+  icalEvent: {
+    content: content,
+  },
+};
 
-module.exports = messagehelper
+module.exports = messagehelper;
