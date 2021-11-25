@@ -9,19 +9,19 @@ const content = ical({
     {
       start: moment(),
       status: "CONFIRMED",
-      end: moment().add(12, "hour"),
-      summary: "Ennjoyment",
+      end: moment().add(10, "hour"),
+      summary: "Sherehe",
       transparency: "OPAQUE",
       organizer: {
         name: "Joan",
         email: `mainawanini@gmail.com`,
-        mailto: `caleb.baraka@thejitu.com`,
+        mailto: `joan.wanini@thejitu.com`,
       },
       location: "Nairobi",
       attendees: [
         {
-          email: "mainajoan12@gmail.com",
-          name: "Wanini",
+          email: "xyz@gmail.com",
+          name: "John",
           status: "NEEDS-ACTION",
           rsvp: true,
           type: "INDIVIDUAL",
@@ -36,7 +36,7 @@ const content = ical({
         },
         {
           email: "xyz@gmail.com",
-          name: "Sarah",
+          name: "Rachael",
           status: "NEEDS-ACTION",
           type: "INDIVIDUAL",
           role: "REQ-PARTICIPANT",
@@ -45,7 +45,4 @@ const content = ical({
     },
   ],
 }).toString();
-let cal = ical();
-cal.method("REQUEST");
-// cal.domain(url).name("My ical invite");
 module.exports = content;

@@ -8,7 +8,7 @@ const messagehelper = {
                <h1>Invite to you:</h1>
                <p>welcome to an awesome meet-up</p>
                <p>Tell a friend to tell a friend</p>
-               <button style="background-color:red">Confirm attendance</button>
+               <button style="background-color:pink">Confirm attendance</button>
         </div>  `,
   icalEvent: {
     content: content,

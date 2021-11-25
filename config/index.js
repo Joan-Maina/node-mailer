@@ -13,7 +13,7 @@ const sending = (message) => {
   return new Promise((resolve, reject) => {
     transporter.sendMail(message, (error, info) => {
       if (error) {
-        return reject(error);
+        return reject(error.message);
       }
       console.log(info.response);
       resolve(info.response);

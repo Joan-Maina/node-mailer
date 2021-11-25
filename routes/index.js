@@ -1,8 +1,7 @@
-const express = require('express')
+const express = require("express");
 const router = express.Router();
-const {Sender}  = require('../controllers/index');
-console.log('EmailSender')
+const { Sender } = require("../controllers/index");
+console.log("EmailSender");
 
-router.get('/', Sender)
-// console.log('wanini')
+router.get("/", Sender);
 module.exports = router;
