@@ -2,7 +2,7 @@ require("dotenv").config();
 const content = require("./emailhelper");
 const messagehelper = {
   from: "mainawanini@gmail.com",
-  to: ["mainajoan12@gmail.com", "mainawanini@gmail.com"],
+  to: ["joan.wanini@thejitu.com"],
   subject: "calendar invite",
   html: `<div>
                <h1>Invite to you:</h1>
