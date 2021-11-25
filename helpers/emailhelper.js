@@ -9,7 +9,7 @@ const content = ical({
     {
       start: moment(),
       status: "CONFIRMED",
-      end: moment().add(10, "hour"),
+      end: moment().add(24, "hour"),
       summary: "Sherehe",
       transparency: "OPAQUE",
       organizer: {
